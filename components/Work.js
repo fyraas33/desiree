@@ -110,7 +110,8 @@ const PortfolioCard = ({
                 className="w-full"
                 width={500}
                 height={500}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
              
           </div>

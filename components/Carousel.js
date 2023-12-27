@@ -340,7 +340,8 @@ function Test() {
               
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
         
           </div>
@@ -351,7 +352,8 @@ function Test() {
              
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
           </div>
           <div className="carda" id="3">
@@ -361,7 +363,8 @@ function Test() {
            
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
           </div>
           <div className="carda" id="4">
@@ -371,7 +374,8 @@ function Test() {
               
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
           </div>
           <div className="carda" id="5">
@@ -381,7 +385,8 @@ function Test() {
                 
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+              placeholder="blur"
               />
           </div>
           <div className="carda" id="6">
@@ -391,7 +396,8 @@ function Test() {
                 
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
           </div>
           <div className="carda" id="7">
@@ -401,7 +407,8 @@ function Test() {
                 
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+              placeholder="blur"
               />
           </div>
           <div className="carda" id="8">
@@ -411,7 +418,8 @@ function Test() {
                 
                 width={450}
                 height={300}
-                priority
+                loading="lazy"
+              placeholder="blur"
               />
           </div>
           <div className="carda" id="9">
@@ -421,7 +429,8 @@ function Test() {
                 
                 width={1880}
                 height={950}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
           </div>
           

@@ -24,7 +24,8 @@ function About() {
                 className="w-full rounded-2xl"
                 width={150}
                 height={150}
-                priority
+                loading="lazy"
+              placeholder="blur"
               />
                   </div>
                   <div className="py-3 sm:py-4">
@@ -34,7 +35,8 @@ function About() {
                 className="w-full rounded-2xl"
                 width={150}
                 height={150}
-                priority
+                loading="lazy"
+              placeholder="blur"
               />
                   </div>
                 </div>
@@ -46,7 +48,8 @@ function About() {
                 className="w-full rounded-2xl"
                 width={150}
                 height={150}
-                priority
+                loading="lazy"
+                placeholder="blur"
               />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
