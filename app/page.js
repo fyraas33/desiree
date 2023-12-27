@@ -14,7 +14,7 @@ import Work from '@/components/Work'
 
 export default function Home() {
   return (
-    <main  >
+    <main className='contt'  >
  
 <Hero/>
 <About/>

@@ -33,8 +33,17 @@
 
 @media screen and (max-width: 640px) {
   .card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2);
+
   }
+  
+.card-carousel .carda {
+width: 300px !important;
+
+}
+
+
+ 
 }
 
 .card-carousel.smooth-return {

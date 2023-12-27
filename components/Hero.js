@@ -2,13 +2,16 @@
 
 import Image from "next/image";
 import "../css/hero.css";
-import hrsld from "../assest/img/hrsld.png";
+
 import { useEffect, useState } from "react";
 import "../css/letter.css";
-import Contc from "@/assest/img/Contc";
+
 import bnr1 from "@/assest/img/13.jpg"
 import bnr3 from "@/assest/img/16.jpg"
-import bnr2 from "@/assest/img/15.jpg"
+import bnr2 from "@/assest/img/23.jpg"
+import bnr4 from "@/assest/img/18.png"
+import bnr5 from "@/assest/img/19.jpg"
+import bnr6 from "@/assest/img/21.png"
 function Hero() {
   useEffect(() => {
     const heroSliderItems = document.querySelectorAll(
@@ -157,6 +160,69 @@ function Hero() {
             ~Design is where science and art break even~ 
  <br />
  Robin Mathew
+            </h1>
+          </li>
+          <li className="slider-item" data-hero-slider-item="">
+            <div className="slider-bg">
+              <Image
+                src={bnr6}
+                alt=" Logo"
+                className="img-cover"
+                width={1880}
+                height={950}
+                priority
+              />
+            </div>
+            <p className="label-2 section-subtitle slider-reveal ownr">
+              Designer Desire
+            </p>
+            <h1 className="display-1 hero-title slider-reveal prgrphha">
+            ~Design is where science and art break even~ 
+ <br />
+ Robin Mathew
+
+            </h1>
+          </li>
+          <li className="slider-item" data-hero-slider-item="">
+            <div className="slider-bg">
+              <Image
+                src={bnr5}
+                alt=" Logo"
+                className="img-cover"
+                width={1880}
+                height={950}
+                priority
+              />
+            </div>
+            <p className="label-2 section-subtitle slider-reveal ownr">
+              Designer Desire
+            </p>
+            <h1 className="display-1 hero-title slider-reveal prgrphha">
+            ~Design is where science and art break even~ 
+ <br />
+ Robin Mathew
+
+            </h1>
+          </li>
+          <li className="slider-item" data-hero-slider-item="">
+            <div className="slider-bg">
+              <Image
+                src={bnr4}
+                alt=" Logo"
+                className="img-cover"
+                width={1880}
+                height={950}
+                priority
+              />
+            </div>
+            <p className="label-2 section-subtitle slider-reveal ownr">
+              Designer Desire
+            </p>
+            <h1 className="display-1 hero-title slider-reveal prgrphha">
+            ~Design is where science and art break even~ 
+ <br />
+ Robin Mathew
+
             </h1>
           </li>
         </ul>

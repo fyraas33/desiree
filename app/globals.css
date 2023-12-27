@@ -3,18 +3,22 @@
 @tailwind utilities;
 
 
- body,html {
+ body {
   max-width: 100%;
   overflow-x: hidden;
-
+  overflow-y: scroll
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 120px;
+
 }
 
 
 .teambg{
   background-color: #F3F3F3;
+}
+.contt{
+  overflow-x: hidden;
 }

@@ -331,8 +331,8 @@ function Test() {
        <>
 
 
-      <div className=".containeraa">
-        <div className="card-carousel">
+      <div className=".containeraa ">
+        <div className="card-carousel ">
           <div className="carda" id="1">
               <Image
                 src={wrk0}
