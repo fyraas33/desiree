@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ body {
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
+
+.teambg{
+  background-color: #F3F3F3;
+}
