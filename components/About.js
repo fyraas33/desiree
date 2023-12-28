@@ -17,7 +17,7 @@ function About() {
     <div className="abott" id="about">
    
        <Lamp />
-         <section className="abott overflow-hidden pt-20 pb-12   bg-white dark:bg-dark  ">
+         <section className="abott overflow-hidden pt-20 pb-12     ">
         <div className="container mx-auto ">
           <div className="flex  flex-wrap items-center justify-between -mx-4  ">
             <div className="w-full px-4 lg:w-6/12 ">
