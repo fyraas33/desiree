@@ -1,16 +1,22 @@
+"use client"
 import Lamp from "@/assest/img/lamp/lamp"
 import abt1 from "@/assest/img/abt1.jpeg"
 import abt2 from "@/assest/img/abt2.jpeg"
 import abt3 from "@/assest/img/abt3.jpeg"
 import Image from "next/image"
 
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 
 function About() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="abott" id="about">
    
-       <Lamp/>
+       <Lamp />
          <section className="abott overflow-hidden pt-20 pb-12   bg-white dark:bg-dark  ">
         <div className="container mx-auto ">
           <div className="flex  flex-wrap items-center justify-between -mx-4  ">
@@ -19,6 +25,7 @@ function About() {
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
                   <Image
+                  data-aos="fade-right"
                 src={abt1}
                 alt=" Logo"
                 className="w-full rounded-2xl"
@@ -37,6 +44,7 @@ function About() {
                 height={150}
                 loading="lazy"
               placeholder="blur"
+              data-aos="fade-right"
               />
                   </div>
                 </div>
@@ -50,6 +58,7 @@ function About() {
                 height={150}
                 loading="lazy"
                 placeholder="blur"
+                data-aos="fade-left"
               />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
                       <svg
@@ -629,14 +638,14 @@ function About() {
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
            
               <div className="mt-10 lg:mt-0">
-                <span className=" mb-4 section__header ">
+                <span className=" mb-4 section__header "  data-aos="fade-left">
                   Why Choose Us
                 </span>
                
-                <p className="mb-5 mt-4 text-base text-body-color dark:text-dark-6">
+                <p className="mb-5 mt-4 text-base text-body-color dark:text-dark-6"  data-aos="fade-left">
                 Welcome to Designer Desire, where creativity meets functionality to bring your vision to life! Choosing us for your design needs means selecting a partner committed to delivering unparalleled excellence and innovation.
 </p>
-                <p className="mb-8 text-base text-body-color dark:text-dark-6">
+                <p className="mb-8 text-base text-body-color dark:text-dark-6"  data-aos="fade-right">
                 Your satisfaction is our priority. We believe in open communication and collaboration throughout the design process. Our client-centric approach ensures that your feedback is not only heard but also integrated into the final product, resulting in designs that exceed expectations. </p>
                
               </div>

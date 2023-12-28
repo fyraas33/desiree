@@ -3,7 +3,9 @@
 import { useState } from "react";
 
 import "./lamp.css"
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 function Lamp() {
 
   const [isLightOn, setLightOn] = useState(false);
@@ -11,8 +13,11 @@ function Lamp() {
   const handleButtonClick = () => {
     setLightOn((prevIsLightOn) => !prevIsLightOn);
   };
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="lamp-section">
+    <div className="lamp-section" data-aos="fade-down">
     <div className="lamp js-turnoff-btn">
       <div className="lamp-item lamp-top" />
       <div className="lamp-item lamp-middle" />

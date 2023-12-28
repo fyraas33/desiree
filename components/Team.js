@@ -1,18 +1,26 @@
+"use client"
 import Tmcard from "@/assest/tmcard/Tmcard";
 import hf from "@/assest/img/hf.jpg"
 import sh from "@/assest/img/sh.jpg"
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const Team = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
     return (
       <section className="pb-10 pt-15 dark:bg-dark lg:pb-20 lg:pt-[53px] teambg " id="team">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                <span className="mb-2 block text-lg font-semibold text-primary section__header">
+                <span className="mb-2 block text-lg font-semibold text-primary section__header"  data-aos="zoom-in" >
                   Our Team
                 </span>
                
-                <p className="text-base text-body-color dark:text-dark-6">
+                <p className="text-base text-body-color dark:text-dark-6"  data-aos="zoom-in" >
                   There are many variations of passages of Lorem Ipsum available
                   but the majority have suffered alteration in some form.
                 </p>
@@ -23,7 +31,7 @@ const Team = () => {
           <div className="-mx-6 flex flex-wrap justify-center  lg:space-x-9 ">
           
         <Tmcard
-       
+      
           name="Haythem Fetoui"
           profession="Product Designer / 3d Artist"
           imageSrc={hf}
@@ -34,6 +42,7 @@ const Team = () => {
           phone="+21629010805"
           />
            <Tmcard
+            
           name="Sahar Tekaya"
           profession=" Interior Designer / 3d Artist "
           imageSrc={sh}

@@ -1,12 +1,17 @@
-
+"use client"
 import Image from 'next/image'
 import Level from '../level/Level'
 import styles from './tmcard.module.css'
 import Link from 'next/link'
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 const Tmcard = ({ imageSrc, name, profession ,facebook,mail,instagram,linkedin,phone }) => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className='my-4 mx-6'>
+    <div className='my-4 mx-6'   data-aos="fade-up">
       <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.front}>

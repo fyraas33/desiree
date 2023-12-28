@@ -1,7 +1,9 @@
 "use client"
 
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import wrk7 from "@/assest/img/17.jpg"
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Image from "next/image";
 import Test from "./Carousel";
@@ -11,7 +13,9 @@ const Work = () => {
   const handleProject = (category) => {
     setShowCard(category);
   };
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <section className="pt-20 pb-12 lg:pt-[59px] lg:pb-[90px] dark:bg-dark" id="work">
@@ -19,11 +23,11 @@ const Work = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                <span className="text-primary mb-2 block text-lg font-semibold section__header">
+                <span className="text-primary mb-2 block text-lg font-semibold section__header"  data-aos="zoom-in" >
                 Our Recent Projects
                 </span>
               
-                <p className="text-body-color text-base dark:text-dark-6">
+                <p className="text-body-color text-base dark:text-dark-6" data-aos="fade-up">
                   There are many variations of passages of Lorem Ipsum available
                   but the majority have suffered alteration in some form.
                 </p>
@@ -42,7 +46,7 @@ const Work = () => {
                         ? "activeClasses bg-primary txthover"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary txthover"
                     }`}
-                  >
+                    data-aos="fade-right"  >
                     All Projects
                   </button>
                 </li>
@@ -54,7 +58,7 @@ const Work = () => {
                         ? "activeClasses bg-primary txthover"
                         : "inactiveClasses text-body-color dark:text-dark-6 hover:bg-primary txthover"
                     }`}
-                  >
+                    data-aos="fade-left"  >
                     Branding
                   </button>
                 </li>
@@ -64,7 +68,7 @@ const Work = () => {
               </ul>
             </div>
           </div>
-          <div className="">
+          <div className="" data-aos="fade-up">
             <PortfolioCard
               ImageHref={wrk7}
               category="Branding"
